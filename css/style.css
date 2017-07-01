@@ -34,6 +34,7 @@ body {
 input {
     width: 120px;
     padding: 20px 0;
+    border: none;
     border-top: 5px solid #ccc;
     font-size: 1em;
     text-align: center;
