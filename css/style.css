@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: bold 1.5em 'Oswald', sans-serif;
+    text-transform: uppercase;
+    background: #000  url("ford.jpg") no-repeat center center / cover;
+    color: #fff;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1;
+    text-shadow: 3px 3px 0 #000;
+    color: rgba(255,255,255, 0.9);   
+}
+
+.result {
+    width: 70%;
+    margin: 3% auto;
+    display: inline-block;
+    font-size: 0.3em;
+}
+
+input {
+    width: 120px;
+    padding: 20px 0;
+    border-top: 5px solid #ccc;
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    background: rgba(0,0,0, 0.8);
+    color: #fff;
+    outline: none;
+}
+
+label {    
+    font-size: 0.8em;
+}
+
+h1 {
+    width: 80%;
+    margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+    h1 {font-size: 2.5em;}
+    .result {font-size: 0.5em;}
+}

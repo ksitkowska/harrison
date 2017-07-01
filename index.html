@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+<head>
+    <meta charset="UTF-8">
+    <title>Co robił HARRISON FORD gdy był w Twoim wieku?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/angular.min.js"></script>    
+    <script src="./js/app/app.js"></script>
+</head>
+<body ng-app="harrisonApp" ng-controller="harrison">
+    
+    <div class="wrapper">
+        <h1 ng-hide="age != result.age">Co robił<br> <big>HARRISON FORD</big><br> gdy był w Twoim wieku?</h1>
+        <h1 ng-show="age < 0 || age > 100">Co robił<br><big>HARRISON FORD</big><br> gdy był w Twoim wieku?</h1>
+        <h1 ng-repeat="result in results" ng-if="age == result.age">Kiedy<br> <big>Harrison Ford</big><br> <span ng-show="age >= 75">będzie</span> miał lat {{age}}<br> <span class="result">{{result.description}}</span></h1>
+
+        <div>
+            <label for="age">Twój wiek:</label><br>
+            <input name="age" type="number" ng-model="age">
+        </div>
+    </div>    
+</body>
+</html>
